@@ -14,13 +14,15 @@ export const ProductCard = ({ product }) => {
     dispatch(setCart({product}));
   }
 
+
+
   return (
     <div className="product-card">
       <div className="product-card__img img">
         <img className="im" src={image} alt={name} />
       </div>
       <div className="product-card__content ">
-        <h3 className="product-card__name">{name}</h3>
+        <h3 className="product-card__name"></h3>
         <p className="product-card__price">
           {formatCurrency(discount ? getAbsolutePrice(price, discount) : price)}
         </p>
